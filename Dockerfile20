@@ -170,4 +170,7 @@ RUN mkdir -p /cre && touch /cre/versions.txt && \
 
 #EXPOSE 8000
 
+ENTRYPOINT ["/cre/ml-entrypoint.sh"]
+#CMD ["shoreman", "/cre/coding-procfile"]
+
 CMD ["/usr/bin/sleep", "1000000"]
