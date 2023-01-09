@@ -1,5 +1,5 @@
 # This is a basic workflow to help you get started with Actions
-
+# https://github.com/marketplace/actions/free-disk-space-ubuntu
 name: dockerhub:2020.0
 
 on:
@@ -32,6 +32,10 @@ jobs:
           file: ./Dockerfile20
           push: true
           tags: tamboraorg/creml:check20 
+
+      - 
+        name: Free Disk Space (Ubuntu)
+        uses: jlumbroso/free-disk-space@main
 
       -
         name: Test
