@@ -165,7 +165,7 @@ RUN mkdir -p /cre && touch /cre/versions.txt && \
 
 
 
-#COPY cre /cre
+COPY cre /cre
 
 
 #EXPOSE 8000
