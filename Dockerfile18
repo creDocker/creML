@@ -76,7 +76,8 @@ RUN ldconfig
 ## RUN pip3 install auto-sklearn
 
 ## PyTorch:  https://pytorch.org
-## RUN pip3 install torch torchvision
+RUN pip3 install torch
+RUN pip3 install torchvision
 # https://github.com/PyTorchLightning/pytorch-lightning
 ## RUN pip3 install pytorch-lightning
 
