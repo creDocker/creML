@@ -35,6 +35,11 @@ jobs:
           file: ./Dockerfile22
           push: true
           tags: tamboraorg/creml:check22
+
+      - 
+        name: Free Disk Space (Ubuntu)
+        uses: jlumbroso/free-disk-space@main
+
       -
         name: Test
         run: |

@@ -36,6 +36,10 @@ jobs:
           push: true
           tags: tamboraorg/creml:check18
 
+      - 
+        name: Free Disk Space (Ubuntu)
+        uses: jlumbroso/free-disk-space@main
+
       -
         name: Test
         run: |
