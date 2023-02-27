@@ -79,7 +79,7 @@ RUN ldconfig
 RUN pip3 install torch
 RUN pip3 install torchvision
 # https://github.com/PyTorchLightning/pytorch-lightning
-## RUN pip3 install pytorch-lightning
+RUN pip3 install pytorch-lightning
 
 ## Install AutoML PyTorch
 ## Requirements
