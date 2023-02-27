@@ -71,8 +71,9 @@ RUN ldconfig
 #DONE#scipy>=0.14.1
 #DONE#pandas<1.0
 #
-RUN curl https://raw.githubusercontent.com/automl/auto-sklearn/master/requirements.txt | xargs -n 1 -L 1 pip3 install
-RUN pip3 install auto-sklearn
+
+## RUN curl https://raw.githubusercontent.com/automl/auto-sklearn/master/requirements.txt | xargs -n 1 -L 1 pip3 install
+## RUN pip3 install auto-sklearn
 
 ## PyTorch:  https://pytorch.org
 RUN pip3 install torch torchvision
