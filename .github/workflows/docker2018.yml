@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
-# https://github.com/marketplace/actions/free-disk-space-ubuntu
-name: dockerhub:2020.0
+
+name: dockerhub:2018.0
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
   schedule:
     # * is a special character in YAML so you have to quote this string 1:00  weekly,Thursday,1:00 #m h d/m m d/w 
-    - cron:  '25 3 * * 5'
+    - cron:  '25 3 * * 4'
 
 jobs:
   docker:
@@ -27,30 +27,26 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-
       -
         name: Build for test
         id: docker_build
         uses: docker/build-push-action@v3
         with:
-          file: ./Dockerfile20
+          file: ./Dockerfile18
           push: true
-          tags: tamboraorg/creml:check20 
-
-      - 
-        name: Free Disk Space (Ubuntu)
-        uses: jlumbroso/free-disk-space@main
+          tags: tamboraorg/creml:check18
 
       -
         name: Test
         run: |
-          docker run --volume /var/run/docker.sock:/tmp/docker.sock:ro tamboraorg/creml:check20 /cre/ml-test.sh 
+          docker run --volume /var/run/docker.sock:/tmp/docker.sock:ro tamboraorg/creml:check18 /cre/ml-test.sh 
+
       -
         name: Build and push
         id: docker_push
         uses: docker/build-push-action@v3
         with:
-          file: ./Dockerfile20
+          file: ./Dockerfile18
           push: true
-          tags: tamboraorg/creml:2020.0, tamboraorg/creml:latest
+          tags: tamboraorg/creml:2018.0
 
