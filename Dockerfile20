@@ -135,12 +135,6 @@ RUN pip3 install imageai
 # https://github.com/johnolafenwa/TorchFusion
 RUN pip3 install torchfusion 
 
-#https://caffe.berkeleyvision.org/install_apt.html
-#https://caffe.berkeleyvision.org/
-RUN apt-get install -y python3-pil
-RUN apt-get -y --no-install-recommends install caffe-cpu
-#RUN apt-get -y --no-install-recommends install caffe-cuda
-
 # Add xgboost
 # https://xgboost.readthedocs.io/en/stable/install.html
 RUN pip3 install xgboost
