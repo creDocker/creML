@@ -1,5 +1,5 @@
-creBuild 	 2023.01
- creUbuntu 	 22.04.1 LTS
+creBuild 	 2023.02
+ creUbuntu 	 22.04.2 LTS
   UbuntuName 	 jammy
   OpenSSL 3.0.2 15 Mar 2022 (Library: OpenSSL 3.0.2 15 Mar 2022)
   Java 	 openjdk version "11.0.17" 2022-10-18
@@ -15,3 +15,7 @@ creBuild 	 2023.01
   rustc 1.61.0
   cargo 1.61.0
   
+ creTensorflow 	 2.3.0
+  torch 	 1.13.1+cu117
+  tensorflow                   2.11.0
+  sklearn 	 
