@@ -4,6 +4,15 @@ Still in prototype status
 Todo:
 =====
 
+Python Compiler:
+https://dl.acm.org/doi/abs/10.1145/3578360.3580275
+https://github.com/exaloop/codon
+https://docs.exaloop.io/codon/
+
+ML-Compiler
+https://github.com/microsoft/hummingbird
+https://github.com/BayesWitnesses/m2cgen
+
 Transformers:
 https://pypi.org/project/transformers/
 pip install transformers
@@ -20,6 +29,15 @@ https://morioh.com/p/49d876460bc4
 https://www.dagshub.com/MiguelPeralvo/spark-nlp-workshop
 https://github.com/JohnSnowLabs/spark-nlp/discussions/1714
 https://pythonrepo.com/repo/JohnSnowLabs-spark-nlp-python-natural-language-processing
+https://github.com/microsoft/SynapseML
+
+Tree:
+https://github.com/microsoft/LightGBM
+https://github.com/IQVIA-ML/LightGBM.jl
+https://github.com/MAIF/shapash
+
+
+
 
 
 https://blog.tensorflow.org/2020/08/train-your-tensorflow-model-on-google.html?linkId=95907203
