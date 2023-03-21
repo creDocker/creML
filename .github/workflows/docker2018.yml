@@ -34,7 +34,7 @@ jobs:
         with:
           file: ./Dockerfile18
           push: true
-          tags: tamboraorg/creml:check18
+          tags: credocker/creml:check18
 
       - 
         name: Free Disk Space (Ubuntu)
@@ -43,7 +43,7 @@ jobs:
       -
         name: Test
         run: |
-          docker run --volume /var/run/docker.sock:/tmp/docker.sock:ro tamboraorg/creml:check18 /cre/ml-test.sh 
+          docker run --volume /var/run/docker.sock:/tmp/docker.sock:ro credocker/creml:check18 /cre/ml-test.sh 
 
       -
         name: Build and push
@@ -52,5 +52,5 @@ jobs:
         with:
           file: ./Dockerfile18
           push: true
-          tags: tamboraorg/creml:2018.0
+          tags: credocker/creml:2018.0
 

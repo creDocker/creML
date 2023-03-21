@@ -34,7 +34,7 @@ jobs:
         with:
           file: ./Dockerfile22
           push: true
-          tags: tamboraorg/creml:check22
+          tags: credocker/creml:check22
 
       - 
         name: Free Disk Space (Ubuntu)
@@ -43,7 +43,7 @@ jobs:
       -
         name: Test
         run: |
-          docker run --volume /var/run/docker.sock:/tmp/docker.sock:ro tamboraorg/creml:check22 /cre/ml-test.sh 
+          docker run --volume /var/run/docker.sock:/tmp/docker.sock:ro credocker/creml:check22 /cre/ml-test.sh 
       -
         name: Build and push
         id: docker_push
@@ -51,5 +51,5 @@ jobs:
         with:
           file: ./Dockerfile22
           push: true
-          tags: tamboraorg/creml:2022.0
+          tags: credocker/creml:2022.0
 
