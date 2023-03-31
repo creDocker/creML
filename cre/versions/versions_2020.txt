@@ -15,7 +15,7 @@ creBuild 	 2023.03
   rustc 1.65.0
   cargo 1.65.0
   
- creML 	 2.3.0
+ creML 	 2.11.0
   torch 	 2.0.0+cu117
   tensorflow                   2.12.0
   sklearn 	 0.24.0
