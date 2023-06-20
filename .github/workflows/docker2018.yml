@@ -27,6 +27,15 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Remove unnecessary files
+        run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /opt/ghc
+          sudo rm -rf "/usr/local/share/boost"
+          sudo rm -rf /usr/local/lib/android
+          sudo rm -rf "$AGENT_TOOLSDIRECTORY"
+
       -
         name: Build for test
         id: docker_build
@@ -35,10 +44,6 @@ jobs:
           file: ./Dockerfile18
           push: true
           tags: credocker/creml:check18
-
-      - 
-        name: Free Disk Space (Ubuntu)
-        uses: jlumbroso/free-disk-space@main
 
       -
         name: Test
