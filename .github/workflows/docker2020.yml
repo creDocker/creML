@@ -28,6 +28,9 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+        name: Free Disk Space (Ubuntu) 1
+        uses: jlumbroso/free-disk-space@main
+
       -
         name: Build for test
         id: docker_build
@@ -38,7 +41,7 @@ jobs:
           tags: credocker/creml:check20 
 
       - 
-        name: Free Disk Space (Ubuntu)
+        name: Free Disk Space (Ubuntu) 2
         uses: jlumbroso/free-disk-space@main
 
       -
