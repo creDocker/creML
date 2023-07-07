@@ -1,4 +1,4 @@
-creBuild 	 2023.06
+creBuild 	 2023.07
  creUbuntu 	 20.04.6 LTS
   UbuntuName 	 focal
   OpenSSL 1.1.1f  31 Mar 2020
@@ -8,14 +8,14 @@ creBuild 	 2023.06
    numpy 	 1.19.0
    scipy 	 1.9.3
    pandas 	 1.2.0
-   openCV 	 4.7.0
+   openCV 	 4.8.0
   R version 3.6.3 (2020-02-29) -- "Holding the Windsock"
   sbcl 	 SBCL 2.0.1.debian
   julia version 1.4.1
-  rustc 1.65.0
-  cargo 1.65.0
+  rustc 1.66.1 (90743e729 2023-01-10) (built from a source tarball)
+  cargo 1.66.1
   
  creML 	 2.11.0
   torch 	 2.0.1+cu117
-  tensorflow                   2.12.0
+  tensorflow                   2.13.0
   sklearn 	 0.24.2
