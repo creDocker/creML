@@ -13,10 +13,10 @@ creBuild 	 2023.04
   R version 4.1.2 (2021-11-01) -- "Bird Hippie"
   sbcl 	 SBCL 2.1.11.debian
   julia version 1.8.1
-  rustc 1.65.0
-  cargo 1.65.0
+  rustc 1.66.1 (90743e729 2023-01-10) (built from a source tarball)
+  cargo 1.66.1
   
  creML 	 2.11.0
   torch 	 2.0.1+cu117
-  tensorflow                   2.12.0
+  tensorflow                   2.13.0
   sklearn 	 0.24.2
