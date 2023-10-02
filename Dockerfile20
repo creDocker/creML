@@ -147,7 +147,7 @@ RUN pip3 install xgboost
 # Add ivy
 # https://github.com/unifyai/ivy
 # https://lets-unify.ai/ivy/
-RUN pip3 install ivy-core
+RUN pip3 install ivy
 
 # https://ui.neptune.ai
 RUN pip3 install neptune-client
