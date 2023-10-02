@@ -37,7 +37,7 @@ RUN pip3 install --upgrade pip
 RUN pip3 install spark-nlp==3.1.1 pyspark==3.1.1
 #RUN pip3 install spark-nlp pyspark 
 
-RUN pip3 install scikit-spark scikit-learn~=0.24
+RUN pip3 install scikit-spark~=0.4 scikit-learn~=0.24
 ## RUN pip3 install scikit-spark scikit-learn
 #RUN apt-get install python3-sklearn python3-sklearn-lib
 
