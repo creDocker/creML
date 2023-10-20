@@ -1,15 +1,15 @@
-creBuild 	 2023.07
+creBuild 	 2023.10
  creUbuntu 	 20.04.6 LTS
   UbuntuName 	 focal
   OpenSSL 1.1.1f  31 Mar 2020
-  Java 	 openjdk version "11.0.19" 2023-04-18
+  Java 	 openjdk version "11.0.20.1" 2023-08-24
   Python3 	 Python 3.8.10
-   Flask 	 Flask 2.3.2
+   Flask 	 Flask 3.0.0
  creCoding 	 2020.0
    numpy 	 1.19.0
    scipy 	 1.9.3
    pandas 	 1.2.0
-   openCV 	 4.8.0
+   openCV 	 4.8.1
   R version 3.6.3 (2020-02-29) -- "Holding the Windsock"
   sbcl 	 SBCL 2.0.1.debian
   julia version 1.4.1
@@ -17,6 +17,6 @@ creBuild 	 2023.07
   cargo 1.66.1
   
  creML 	 2.11.0
-  torch 	 2.0.1+cu117
-  tensorflow                   2.13.0
+  torch 	 2.1.0+cu121
+  tensorflow                   2.13.1
   sklearn 	 0.24.2
