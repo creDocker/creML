@@ -13,8 +13,8 @@ creBuild 	 2023.11
   R version 3.6.3 (2020-02-29) -- "Holding the Windsock"
   sbcl 	 SBCL 2.0.1.debian
   julia version 1.4.1
-  rustc 1.66.1 (90743e729 2023-01-10) (built from a source tarball)
-  cargo 1.66.1
+  rustc 1.70.0 (90c541806 2023-05-31) (built from a source tarball)
+  cargo 1.70.0
   
  creML 	 2.11.0
   torch 	 2.1.1+cu121
