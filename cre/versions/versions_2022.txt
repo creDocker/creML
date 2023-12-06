@@ -1,23 +1,24 @@
-creBuild 	 2023.07
- creUbuntu 	 22.04.2 LTS
+creBuild 	 2023.12
+ creUbuntu 	 22.04.3 LTS
   UbuntuName 	 jammy
   OpenSSL 3.0.2 15 Mar 2022 (Library: OpenSSL 3.0.2 15 Mar 2022)
   msmtp version 1.8.16
   Java 	 openjdk version "19.0.2" 2023-01-17
-  Python3 	 Python 3.10.6
-   Flask 	 Flask 2.2.0
+  Python3 	 Python 3.10.12
+   Flask 	 
  creCoding 	 2022.0
-   numpy 	 1.21.5
+   numpy 	 1.26.2
    scipy 	 1.8.0
-   pandas 	 2.0.3
-   openCV 	 4.8.0
+   pandas 	 2.1.3
+   openCV 	 4.8.1
   R version 4.1.2 (2021-11-01) -- "Bird Hippie"
   sbcl 	 SBCL 2.1.11.debian
   julia version 1.8.1
-  rustc 1.66.1 (90743e729 2023-01-10) (built from a source tarball)
-  cargo 1.66.1
+  rustc 1.70.0 (90c541806 2023-05-31) (built from a source tarball)
+  cargo 1.70.0
   
  creML 	 2.11.0
-  torch 	 2.0.1+cu117
-  tensorflow                   2.13.0
-  sklearn 	 0.24.2
+  torch 	 2.1.1+cu121
+  tensorflow                   2.15.0
+  torch 	 2.15.0
+  sklearn 	 1.3.2
