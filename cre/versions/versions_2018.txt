@@ -1,4 +1,4 @@
-creBuild 	 2023.11
+creBuild 	 2023.12
  creUbuntu 	 18.04.6 LTS
   UbuntuName 	 bionic
   OpenSSL 1.1.1  11 Sep 2018
@@ -19,4 +19,5 @@ creBuild 	 2023.11
  creML 	 2.3.0
   torch 	 1.10.2+cu102
   tensorflow              2.5.2
+  torch 	 
   sklearn 	 0.24.2
