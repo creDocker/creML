@@ -19,4 +19,5 @@ creBuild 	 2023.12
  creML 	 2.11.0
   torch 	 2.1.1+cu121
   tensorflow                   2.13.1
+  keras 	 
   sklearn 	 0.24.2
