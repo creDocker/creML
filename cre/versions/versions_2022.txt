@@ -9,7 +9,7 @@ creBuild 	 2023.12
  creCoding 	 2022.0
    numpy 	 1.26.2
    scipy 	 1.8.0
-   pandas 	 2.1.3
+   pandas 	 2.1.4
    openCV 	 4.8.1
   R version 4.1.2 (2021-11-01) -- "Bird Hippie"
   sbcl 	 SBCL 2.1.11.debian
@@ -18,7 +18,7 @@ creBuild 	 2023.12
   cargo 1.70.0
   
  creML 	 2.11.0
-  torch 	 2.1.1+cu121
+  torch 	 2.1.2+cu121
   tensorflow                   2.15.0.post1
   keras 	 2.15.0
   sklearn 	 1.3.2
