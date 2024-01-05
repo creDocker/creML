@@ -1,4 +1,4 @@
-creBuild 	 2023.12
+creBuild 	 2024.01
  creUbuntu 	 20.04.6 LTS
   UbuntuName 	 focal
   OpenSSL 1.1.1f  31 Mar 2020
@@ -9,7 +9,7 @@ creBuild 	 2023.12
    numpy 	 1.19.0
    scipy 	 1.9.3
    pandas 	 1.2.0
-   openCV 	 4.8.1
+   openCV 	 4.9.0
   R version 3.6.3 (2020-02-29) -- "Holding the Windsock"
   sbcl 	 SBCL 2.0.1.debian
   julia version 1.4.1
