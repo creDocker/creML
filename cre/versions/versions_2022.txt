@@ -9,7 +9,7 @@ creBuild 	 2024.01
  creCoding 	 2022.0
    numpy 	 1.26.3
    scipy 	 1.8.0
-   pandas 	 2.1.4
+   pandas 	 2.2.0
    openCV 	 4.9.0
   R version 4.1.2 (2021-11-01) -- "Bird Hippie"
   sbcl 	 SBCL 2.1.11.debian
