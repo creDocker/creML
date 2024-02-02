@@ -1,4 +1,4 @@
-creBuild 	 2024.01
+creBuild 	 2024.02
  creUbuntu 	 20.04.6 LTS
   UbuntuName 	 focal
   OpenSSL 1.1.1f  31 Mar 2020
@@ -13,11 +13,11 @@ creBuild 	 2024.01
   R version 3.6.3 (2020-02-29) -- "Holding the Windsock"
   sbcl 	 SBCL 2.0.1.debian
   julia version 1.4.1
-  rustc 1.70.0 (90c541806 2023-05-31) (built from a source tarball)
-  cargo 1.70.0
+  rustc 1.71.1 (eb26296b5 2023-08-03) (built from a source tarball)
+  cargo 1.71.1
   
  creML 	 2.11.0
-  torch 	 2.1.2+cu121
+  torch 	 2.2.0+cu121
   tensorflow                   2.13.1
   keras 	 
   sklearn 	 0.24.2
