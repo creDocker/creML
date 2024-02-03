@@ -1,4 +1,4 @@
-creBuild 	 2024.01
+creBuild 	 2024.02
  creUbuntu 	 22.04.3 LTS
   UbuntuName 	 jammy
   OpenSSL 3.0.2 15 Mar 2022 (Library: OpenSSL 3.0.2 15 Mar 2022)
@@ -14,11 +14,11 @@ creBuild 	 2024.01
   R version 4.1.2 (2021-11-01) -- "Bird Hippie"
   sbcl 	 SBCL 2.1.11.debian
   julia version 1.8.1
-  rustc 1.70.0 (90c541806 2023-05-31) (built from a source tarball)
-  cargo 1.70.0
+  rustc 1.71.1 (eb26296b5 2023-08-03) (built from a source tarball)
+  cargo 1.71.1
   
  creML 	 2.11.0
-  torch 	 2.1.2+cu121
+  torch 	 2.2.0+cu121
   tensorflow                   2.15.0.post1
   keras 	 2.15.0
   sklearn 	 1.4.0
