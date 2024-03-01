@@ -24,7 +24,8 @@ ENV NVIDIA_VERSION 470
 #ENV INITRD No
 #ENV LANG en_US.UTF-8
 #ENV TENSORFLOW_VERSION 1.14.0 
-ENV TENSORFLOW_VERSION 2.11.0 
+ENV TENSORFLOW_VERSION 2.16.0
+ENV KERAS_VERSION 3.0.0 
 
 LABEL Name="ML for CRE" \
       CRE=$CRE_VERSION \ 
@@ -48,7 +49,7 @@ RUN pip3 install tensorboard tensorboard_logger
 # AutoKeras
 # https://machinelearningmastery.com/autokeras-for-classification-and-regression/
 ## RUN pip3 install keras autokeras
-RUN pip3 install keras~=$TENSORFLOW_VERSION
+RUN pip3 install keras~=$KERAS_VERSION
 
 RUN pip3 list
 
