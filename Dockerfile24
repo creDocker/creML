@@ -42,13 +42,13 @@ RUN pip3 install --upgrade pip
 
 #RUN pip3 install scikit-spark scikit-learn
 
-RUN pip3 install tensorflow~=TENSORFLOW_VERSION
+RUN pip3 install tensorflow~=$TENSORFLOW_VERSION
 RUN pip3 install tensorboard tensorboard_logger
 
 # AutoKeras
 # https://machinelearningmastery.com/autokeras-for-classification-and-regression/
 ## RUN pip3 install keras autokeras
-RUN pip3 install keras~=TENSORFLOW_VERSION
+RUN pip3 install keras~=$TENSORFLOW_VERSION
 
 RUN pip3 list
 
