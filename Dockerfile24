@@ -1,0 +1,71 @@
+# Machine Learning Dockerfile 
+#
+# https://github.com/tamboraorg/docker/creml
+#
+
+# Pull base image.
+FROM credocker/creubuntu:2022.0
+
+#https://www.tensorflow.org/install/lang_c
+#https://www.tensorflow.org/install 
+
+MAINTAINER Michael Kahle <michael.kahle@yahoo.de>
+
+ARG BUILD_YEAR=2024
+ARG BUILD_MONTH=0
+ARG BUILD_TAG=latest
+
+ENV PROCESSOR_MODE CPU   # 'GPU' or 'CPU'
+ENV NVIDIA_VERSION 470
+
+
+# version: yyyy.n for stable versions / 0.yyyy for development
+#ENV DEBIAN_FRONTEND noninteractive 
+#ENV INITRD No
+#ENV LANG en_US.UTF-8
+#ENV TENSORFLOW_VERSION 1.14.0 
+ENV TENSORFLOW_VERSION 2.11.0 
+
+LABEL Name="ML for CRE" \
+      CRE=$CRE_VERSION \ 
+      Year=$BUILD_YEAR \
+      Month=$BUILD_MONTH \
+      Version=$TENSORFLOW_VERSION \
+      OS="Ubuntu:$UBUNTU_VERSION" \
+      Build_=$BUILD_TAG 
+
+WORKDIR /cre/
+
+RUN pip3 install --upgrade pip
+
+# RUN pip3 install spark-nlp==3.1.1 pyspark==3.1.1
+
+#RUN pip3 install scikit-spark scikit-learn
+
+RUN pip3 install tensorflow~=TENSORFLOW_VERSION
+RUN pip3 install tensorboard tensorboard_logger
+
+# AutoKeras
+# https://machinelearningmastery.com/autokeras-for-classification-and-regression/
+## RUN pip3 install keras autokeras
+RUN pip3 install keras~=TENSORFLOW_VERSION
+
+RUN pip3 list
+
+RUN mkdir -p /cre && touch /cre/versions.txt && \ 
+   echo "$(date +'%F %R') \t creML \t $TENSORFLOW_VERSION" >> /cre/versions.txt && \ 
+   echo "$(date +'%F %R') \t  $(pip3 list | grep 'tensorflow ')" >> /cre/versions.txt && \
+#   echo "$(date +'%F %R') \t  $(pip3 list | grep 'tensorflow ' | sed -e ' *|\t|' )" >> /cre/versions.txt && \
+   echo "$(date +'%F %R') \t  keras \t $(python3 -c 'import keras; print(keras.__version__)')" 2>nul >> /cre/versions.txt 
+
+
+
+COPY cre /cre
+
+
+#EXPOSE 8000
+
+ENTRYPOINT ["/cre/ml-entrypoint.sh"]
+CMD ["shoreman", "/cre/ml-procfile"]
+
+#CMD ["/usr/bin/sleep", "1000000"]
