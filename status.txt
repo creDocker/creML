@@ -4,6 +4,9 @@ Still in prototype status
 Todo:
 =====
 
+Complex:
+https://keras-complex.readthedocs.io/
+
 Python Compiler:
 https://dl.acm.org/doi/abs/10.1145/3578360.3580275
 https://github.com/exaloop/codon

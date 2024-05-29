@@ -4,7 +4,7 @@
 #
 
 # Pull base image.
-FROM credocker/creubuntu:2022.0
+FROM credocker/creubuntu:2024.0
 
 #https://www.tensorflow.org/install/lang_c
 #https://www.tensorflow.org/install 
