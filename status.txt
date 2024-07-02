@@ -78,3 +78,6 @@ for i in range(100):
 
 neptune.log_metric('AUC', 0.96)
 ##
+
+https://www.kdnuggets.com/beginners-guide-to-data-cleaning-with-pyjanitor
+https://pypi.org/project/pyjanitor/
