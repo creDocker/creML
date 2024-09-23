@@ -1,8 +1,23 @@
 Still in prototype status
- 
+
+https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research 
 
 Todo:
 =====
+
+
+
+Here ML or Media?
+https://code.mpimet.mpg.de/projects/cdo/embedded/index.html#x1-40001.1.1
+apt-get install cdo
+https://code.mpimet.mpg.de/attachments/download/27273/python_cdo_introduction.pdf
+https://www.unidata.ucar.edu/software/netcdf
+https://proj.org/en/9.5/
+
+
+
+
+https://www.r-bloggers.com/2024/07/shockingly-fast-data-manipulation-in-r-with-polars/
 
 Complex:
 https://keras-complex.readthedocs.io/
