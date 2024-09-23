@@ -126,12 +126,12 @@ RUN pip3 install sense2vec
 # Add stanza 
 # https://stanfordnlp.github.io/stanza/
 # https://github.com/stanfordnlp/stanza
-RUN pip3 install stanza
+## RUN pip3 install stanza
 
 # Add Image AI
 # https://github.com/OlafenwaMoses/ImageAI
 # https://towardsdatascience.com/how-to-create-a-simple-object-detection-system-with-python-and-imageai-ee1bcaf6b111
-RUN pip3 install imageai
+## RUN pip3 install imageai
 
 # Add TorchFusion
 # https://github.com/johnolafenwa/TorchFusion
