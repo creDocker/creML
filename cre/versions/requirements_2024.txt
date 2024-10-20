@@ -12,7 +12,7 @@ charset-normalizer==3.4.0
 click==8.1.7
 colorama==0.4.6
 cryptography==41.0.7
-csvw==3.3.1
+csvw==3.4.0
 dbus-python==1.3.2
 decorator==5.1.1
 defusedxml==0.7.1
@@ -26,12 +26,13 @@ Flask==2.2.0
 flatbuffers==24.3.25
 gast==0.6.0
 google-pasta==0.2.0
-grpcio==1.66.2
+grpcio==1.67.0
 h5py==3.12.1
+html5lib-modern==1.2
 httplib2==0.20.4
 idna==3.10
 ipython==8.12.3
-isodate==0.6.1
+isodate==0.7.2
 itsdangerous==2.2.0
 jedi==0.19.1
 Jinja2==3.1.4
@@ -48,7 +49,7 @@ lazr.uri==1.0.6
 libclang==18.1.1
 Markdown==3.7
 markdown-it-py==3.0.0
-MarkupSafe==3.0.1
+MarkupSafe==3.0.2
 matplotlib-inline==0.1.7
 mdurl==0.1.2
 mistune==3.0.2
@@ -67,7 +68,7 @@ parso==0.8.4
 pexpect==4.9.0
 pickleshare==0.7.5
 pika==1.3.2
-pillow==10.4.0
+pillow==11.0.0
 pipreqs==0.5.0
 platformdirs==4.3.6
 prompt_toolkit==3.0.48
@@ -82,7 +83,7 @@ python-apt==2.7.7+ubuntu3
 python-dateutil==2.9.0.post0
 PyYAML==6.0.2
 pyzmq==26.2.0
-rdflib==7.0.0
+rdflib==7.1.0
 referencing==0.35.1
 requests==2.32.3
 rfc3986==1.5.0
