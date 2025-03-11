@@ -55,6 +55,7 @@ https://github.com/IQVIA-ML/LightGBM.jl
 https://github.com/MAIF/shapash
 
 
+https://docs.jax.dev/en/latest/
 
 
 
@@ -96,3 +97,7 @@ neptune.log_metric('AUC', 0.96)
 
 https://www.kdnuggets.com/beginners-guide-to-data-cleaning-with-pyjanitor
 https://pypi.org/project/pyjanitor/
+
+https://www.kdnuggets.com/11-python-libraries-every-ai-engineer-should-know
+https://www.kdnuggets.com/creating-automated-data-cleaning-pipelines-using-python-and-pandas
+https://www.kdnuggets.com/2025/02/nettresults/30-must-know-tools-for-python-development
