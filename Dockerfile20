@@ -4,7 +4,7 @@
 #
 
 # Pull base image.
-FROM credocker/crecoding:2020.0
+FROM credocker/crepython:2020.0
 
 #https://www.tensorflow.org/install/lang_c
 #https://www.tensorflow.org/install 
