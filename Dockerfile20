@@ -125,7 +125,7 @@ RUN pip3 install keras autokeras
 # https://github.com/explosion/spaCy
 # https://spacy.io/universe/project/sense2vec
 # https://github.com/explosion/sense2vec
-RUN pip3 install spacy
+RUN pip3 install spacy==2.2.4
 RUN pip3 install sense2vec
 
 # RUN python3 -m spacy download en_core_web_sm
