@@ -5,10 +5,14 @@ creBuild 	 2025.05
   msmtp version 1.8.24
   Java 	 openjdk version "21.0.7" 2025-04-15
   Python3 	 Python 3.12.3
-   numpy 	 2.2.5
-   scipy 	 
+   numpy 	 1.26.4
+   scipy 	 1.11.4
    pandas 	 2.2.3
    Flask 	 
+ crePython 	 2024.0
+   scipy 	 1.11.4
+   geopandas 	 1.0.1
+   openCV 	 4.11.0
  creML 	 2.16.1
   tensorflow                2.16.2
   keras 	 3.8.0
