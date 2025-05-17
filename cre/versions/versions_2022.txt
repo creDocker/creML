@@ -10,7 +10,10 @@ creBuild 	 2025.05
    Flask 	 
  creCoding 	 2022.0
    scipy 	 1.8.0
+   statsmodels 	 
    geopandas 	 1.0.1
+   fiona 	 1.10.1
+   beautifulsoup4 	 
    openCV 	 4.11.0
  creML 	 2.13.0
   tensorflow                   2.13.1
