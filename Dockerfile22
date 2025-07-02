@@ -43,6 +43,7 @@ RUN ubuntu-drivers devices
 #RUN ubuntu-drivers autoinstall
 RUN apt-get  -y --no-install-recommends install nvidia-driver-$NVIDIA_VERSION
 #RUN apt-get -y --no-install-recommends install nvidia-$NVIDIA_VERSION
+RUN apt-get  -y --no-install-recommends install nvidia-cuda-toolkit
 
 # install OpenBlas
 RUN apt-get  -y --no-install-recommends install libopenblas-dev liblapack-dev
@@ -71,9 +72,10 @@ RUN mkdir -p /cre && \
 
 RUN mkdir -p /cre && touch /cre/versions.txt && \ 
    echo "$(date +'%F %R') \t creML \t $TENSORFLOW_VERSION" >> /cre/versions.txt && \ 
-   echo "$(date +'%F %R') \t  $(pip3 list | grep 'tensorflow ')" >> /cre/versions.txt && \
-#   echo "$(date +'%F %R') \t  $(pip3 list | grep 'tensorflow ' | sed -e ' *|\t|' )" >> /cre/versions.txt && \
-   echo "$(date +'%F %R') \t  keras \t $(python3 -c 'import keras; print(keras.__version__)')" 2>nul >> /cre/versions.txt 
+#   echo "$(date +'%F %R') \t  $(pip3 list | grep 'tensorflow ')" >> /cre/versions.txt && \
+   echo "$(date +'%F %R') \t  keras \t $(python3 -c 'import keras; print(keras.__version__)')" 2>nul >> /cre/versions.txt && \ 
+   echo "$(date +'%F %R') \t  tensorflow \t $(python3 -c 'import tensorflow; print(tensorflow.__version__)')" 2>nul >> /cre/versions.txt && \
+   echo "$(date +'%F %R') \t  nvcc \t $(nvcc  --version | grep release)" >> /cre/versions.txt 
 
 
 
