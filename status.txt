@@ -5,7 +5,7 @@ https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research
 Todo:
 =====
 
-
+https://keras.io/getting_started/#installing-keras-3
 
 Here ML or Media?
 https://code.mpimet.mpg.de/projects/cdo/embedded/index.html#x1-40001.1.1
@@ -101,3 +101,6 @@ https://pypi.org/project/pyjanitor/
 https://www.kdnuggets.com/11-python-libraries-every-ai-engineer-should-know
 https://www.kdnuggets.com/creating-automated-data-cleaning-pipelines-using-python-and-pandas
 https://www.kdnuggets.com/2025/02/nettresults/30-must-know-tools-for-python-development
+
+
+https://github.com/NVIDIA/warp
