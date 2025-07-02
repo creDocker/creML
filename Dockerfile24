@@ -40,11 +40,12 @@ LABEL Name="ML for CRE" \
 # https://www.linuxbabe.com/ubuntu/install-nvidia-driver-ubuntu-18-04
 RUN add-apt-repository ppa:graphics-drivers/ppa
 RUN apt-get  -y --no-install-recommends install ubuntu-drivers-common
+RUN apt-get  -y --no-install-recommends install nvidia-cuda-toolkit
 RUN ubuntu-drivers devices
 #RUN ubuntu-drivers autoinstall
 RUN apt-get  -y --no-install-recommends install nvidia-driver-$NVIDIA_VERSION
 #RUN apt-get -y --no-install-recommends install nvidia-$NVIDIA_VERSION
-RUN apt-get  -y --no-install-recommends install nvidia-cuda-toolkit
+
 
 # install OpenBlas
 RUN apt-get  -y --no-install-recommends install libopenblas-dev liblapack-dev
