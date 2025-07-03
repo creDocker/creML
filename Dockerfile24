@@ -15,17 +15,14 @@ ARG BUILD_YEAR=2024
 ARG BUILD_MONTH=0
 ARG BUILD_TAG=latest
 
-ENV PROCESSOR_MODE CPU   # 'GPU' or 'CPU'
-ENV NVIDIA_VERSION 470
+# 'GPU' or 'CPU'
+ENV PROCESSOR_MODE=CPU   
+ENV NVIDIA_VERSION=470
 
 # version: yyyy.n for stable versions / 0.yyyy for development
-#ENV DEBIAN_FRONTEND noninteractive 
-#ENV INITRD No
-#ENV LANG en_US.UTF-8
-#ENV TENSORFLOW_VERSION 1.14.0 
-ENV TENSORFLOW_VERSION 2.16.1
+ENV TENSORFLOW_VERSION=2.16.1
 ## 2.16.0
-ENV KERAS_VERSION 3.8.0 
+ENV KERAS_VERSION=3.8.0 
 
 LABEL Name="ML for CRE" \
       CRE=$CRE_VERSION \ 
@@ -48,7 +45,7 @@ RUN apt-get  -y --no-install-recommends install nvidia-driver-$NVIDIA_VERSION
 #RUN apt-get -y --no-install-recommends install nvidia-$NVIDIA_VERSION
 ## RUN cat /proc/driver/nvidia/version
 ## RUN nvidia-smi
-RUn modinfo nvidia | grep version
+## RUN modinfo nvidia | grep version
 RUN apt-get  -y --no-install-recommends install nvidia-cuda-toolkit
 RUN nvcc  --version
 ##RUN cat /proc/driver/nvidia/version
