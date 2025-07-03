@@ -48,8 +48,8 @@ RUN apt-get  -y --no-install-recommends install nvidia-driver-$NVIDIA_VERSION
 ## RUN modinfo nvidia | grep version
 RUN apt-get  -y --no-install-recommends install nvidia-cuda-toolkit
 RUN nvcc  --version
-##RUN cat /proc/driver/nvidia/version
-RUN nvidia-smi
+## RUN cat /proc/driver/nvidia/version
+## RUN nvidia-smi
 RUn modinfo nvidia | grep version
 
 
