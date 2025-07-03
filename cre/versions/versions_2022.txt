@@ -16,5 +16,6 @@ creBuild 	 2025.06
    beautifulsoup4 	 
    openCV 	 4.11.0
  creML 	 2.13.0
-  tensorflow                   2.13.1
   keras 	 2.13.1
+  tensorflow 	 2.13.1
+  nvcc 	 Cuda compilation tools, release 11.5, V11.5.119
