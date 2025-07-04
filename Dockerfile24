@@ -50,7 +50,7 @@ RUN apt-get  -y --no-install-recommends install nvidia-cuda-toolkit
 RUN nvcc  --version
 ## RUN cat /proc/driver/nvidia/version
 ## RUN nvidia-smi
-RUn modinfo nvidia | grep version
+## RUn modinfo nvidia | grep version
 
 
 # install OpenBlas
