@@ -43,11 +43,13 @@ RUN ubuntu-drivers devices
 #RUN ubuntu-drivers autoinstall
 RUN apt-get  -y --no-install-recommends install nvidia-driver-$NVIDIA_VERSION
 RUN apt-get  -y --no-install-recommends install nvidia-utils-$NVIDIA_VERSION
+RUN apt-get  -y --no-install-recommends install nvidia-dkms-$NVIDIA_VERSION
 #RUN apt-get -y --no-install-recommends install nvidia-$NVIDIA_VERSION
 ## RUN cat /proc/driver/nvidia/version
 ## RUN nvidia-smi
 ## RUN modinfo nvidia | grep version
 RUN apt-get  -y --no-install-recommends install nvidia-cuda-toolkit
+RUN lspci | grep -i nvidia
 RUN nvcc  --version
 ## RUN cat /proc/driver/nvidia/version
 ## RUN nvidia-smi
