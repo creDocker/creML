@@ -14,7 +14,11 @@ https://code.mpimet.mpg.de/attachments/download/27273/python_cdo_introduction.pd
 https://www.unidata.ucar.edu/software/netcdf
 https://proj.org/en/9.5/
 
-
+Probability:
+https://www.linkedin.com/pulse/deep-probabilistic-neural-networks-python-keras-guide-vitor-mesquita-4xmyc/
+https://keras.io/examples/generative/vae/
+https://keras.io/examples/keras_recipes/bayesian_neural_networks/
+https://tensorchiefs.github.io/dl_book/
 
 
 https://www.r-bloggers.com/2024/07/shockingly-fast-data-manipulation-in-r-with-polars/
