@@ -107,4 +107,9 @@ https://www.kdnuggets.com/creating-automated-data-cleaning-pipelines-using-pytho
 https://www.kdnuggets.com/2025/02/nettresults/30-must-know-tools-for-python-development
 
 
+https://github.com/ageron/handson-ml3
+
 https://github.com/NVIDIA/warp
+
+https://github.com/jakevdp/wpca   #weighted PCA
+https://github.com/xarray-contrib/xeofs
