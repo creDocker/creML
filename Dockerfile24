@@ -49,7 +49,7 @@ RUN apt-get  -y --no-install-recommends install nvidia-dkms-$NVIDIA_VERSION
 ## RUN nvidia-smi
 ## RUN modinfo nvidia | grep version
 RUN apt-get  -y --no-install-recommends install nvidia-cuda-toolkit
-RUN lspci | grep -i nvidia
+## RUN lspci | grep -i nvidia
 RUN nvcc  --version
 ## RUN cat /proc/driver/nvidia/version
 ## RUN nvidia-smi
