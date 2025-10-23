@@ -15,7 +15,8 @@ ARG BUILD_YEAR=2018
 ARG BUILD_MONTH=0
 ARG BUILD_TAG=latest
 
-ENV PROCESSOR_MODE=CPU   # 'GPU' or 'CPU'
+# 'GPU' or 'CPU'
+ENV PROCESSOR_MODE=CPU
 ENV NVIDIA_VERSION=450
 
 # version: yyyy.n for stable versions / 0.yyyy for development
