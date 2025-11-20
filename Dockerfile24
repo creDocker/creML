@@ -65,6 +65,7 @@ WORKDIR /cre/python
 ## RUN pip3 install --upgrade pip
 
 #spacy==3.6? textblob==0.15.3? textblob_de==0.4.3?
+RUN pip3 install HanTa
 RUN pip3 install spacy textblob textblob_de nltk
 RUN pip3 install scikit-learn
 RUN pip3 install wpca

@@ -21,10 +21,6 @@ ENV NVIDIA_VERSION=470
 
 
 # version: yyyy.n for stable versions / 0.yyyy for development
-#ENV DEBIAN_FRONTEND=noninteractive 
-#ENV INITRD=No
-#ENV LANG=en_US.UTF-8
-#ENV TENSORFLOW_VERSION=1.14.0 
 ENV TENSORFLOW_VERSION=2.13.0 
 ENV KERAS_VERSION=2.13.0 
 
@@ -54,6 +50,9 @@ RUN apt-get  -y --no-install-recommends install libopenblas-dev liblapack-dev
 WORKDIR /cre/
 
 RUN pip3 install --upgrade pip
+#spacy==3.6? textblob==0.15.3? textblob_de==0.4.3?
+RUN pip3 install HanTa
+RUN pip3 install spacy textblob textblob_de nltk
 RUN pip3 install scikit-learn
 RUN pip3 install wpca xeofs
 # RUN pip3 install spark-nlp==3.1.1 pyspark==3.1.1 scikit-spark

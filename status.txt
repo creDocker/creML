@@ -113,3 +113,6 @@ https://github.com/NVIDIA/warp
 
 https://github.com/jakevdp/wpca   #weighted PCA
 https://github.com/xarray-contrib/xeofs
+https://xeofs.readthedocs.io/en/latest/content/user_guide/installation.html   (NOT YET WORKING!)
+
+
