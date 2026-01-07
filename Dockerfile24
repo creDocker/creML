@@ -82,6 +82,24 @@ RUN pip3 install tensorboard tensorboard_logger
 ## RUN pip3 install keras autokeras
 RUN pip3 install keras~=$KERAS_VERSION
 
+## OLLAMA SERVER
+## MAY BETTER MOVE LOCAL SERVER VERSION TO OWN CONTAINER
+# https://docs.ollama.com/
+# https://github.com/ollama/ollama
+# https://github.com/ollama/ollama/blob/main/docs/api.md
+## RUN curl -fsSL https://ollama.com/install.sh | sh
+
+## OLLAMA CLIENT
+# https://github.com/ollama/ollama-python
+# OLLAMA_API_KEY=your_api_key #https://ollama.com/settings/keys
+RUN pip3 install ollama  
+
+## OLLAMA TOOLS
+# https://github.com/meirm/ollama-tools   # needs: https://github.com/Textualize/rich
+ 
+
+
+
 RUN pip3 list
 
 # Freeze python requirements here:
@@ -93,8 +111,8 @@ RUN mkdir -p /cre && touch /cre/versions.txt && \
 #   echo "$(date +'%F %R') \t  $(pip3 list | grep 'tensorflow ')" >> /cre/versions.txt && \
    echo "$(date +'%F %R') \t  keras \t $(python3 -c 'import keras; print(keras.__version__)')" 2>nul >> /cre/versions.txt && \ 
    echo "$(date +'%F %R') \t  tensorflow \t $(python3 -c 'import tensorflow; print(tensorflow.__version__)')" 2>nul >> /cre/versions.txt && \
-   echo "$(date +'%F %R') \t  nvcc \t $(nvcc  --version | grep release)" >> /cre/versions.txt
-
+   echo "$(date +'%F %R') \t  nvcc \t $(nvcc  --version | grep release)" >> /cre/versions.txt && \ 
+   echo "$(date +'%F %R') \t  $(pip3 list | grep 'ollama ')" >> /cre/versions.txt
 
 
 COPY cre /cre
