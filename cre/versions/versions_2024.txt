@@ -20,3 +20,4 @@ creBuild 	 2026.01
   keras 	 3.8.0
   tensorflow 	 2.16.2
   nvcc 	 Cuda compilation tools, release 12.0, V12.0.140
+  ollama                    0.6.1
