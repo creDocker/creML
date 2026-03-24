@@ -62,25 +62,25 @@ RUN apt-get  -y --no-install-recommends install libopenblas-dev liblapack-dev
 
 WORKDIR /cre/python
 
-## RUN pip3 install --upgrade pip
+## RUN uv pip install --upgrade pip
 
 #spacy==3.6? textblob==0.15.3? textblob_de==0.4.3?
-RUN pip3 install HanTa
-RUN pip3 install spacy textblob textblob_de nltk
-RUN pip3 install scikit-learn
-RUN pip3 install wpca
-#RUN pip3 install xeofs
+RUN uv pip install HanTa
+RUN uv pip install spacy textblob textblob_de nltk
+RUN uv pip install scikit-learn
+RUN uv pip install wpca
+#RUN uv pip install xeofs
 
-# RUN pip3 install spark-nlp==3.1.1 pyspark==3.1.1 scikit-spark
+# RUN uv pip install spark-nlp==3.1.1 pyspark==3.1.1 scikit-spark
 
 
-RUN pip3 install tensorflow~=$TENSORFLOW_VERSION
-RUN pip3 install tensorboard tensorboard_logger
+RUN uv pip install tensorflow~=$TENSORFLOW_VERSION
+RUN uv pip install tensorboard tensorboard_logger
 
 # AutoKeras
 # https://machinelearningmastery.com/autokeras-for-classification-and-regression/
-## RUN pip3 install keras autokeras
-RUN pip3 install keras~=$KERAS_VERSION
+## RUN uv pip install keras autokeras
+RUN uv pip install keras~=$KERAS_VERSION
 
 ## OLLAMA SERVER
 ## MAY BETTER MOVE LOCAL SERVER VERSION TO OWN CONTAINER
@@ -92,7 +92,7 @@ RUN pip3 install keras~=$KERAS_VERSION
 ## OLLAMA CLIENT
 # https://github.com/ollama/ollama-python
 # OLLAMA_API_KEY=your_api_key #https://ollama.com/settings/keys
-RUN pip3 install ollama  
+RUN uv pip install ollama  
 
 ## OLLAMA TOOLS
 # https://github.com/meirm/ollama-tools   # needs: https://github.com/Textualize/rich
@@ -100,19 +100,19 @@ RUN pip3 install ollama
 
 
 
-RUN pip3 list
+RUN uv pip list
 
 # Freeze python requirements here:
 RUN mkdir -p /cre && \ 
-    pip3 freeze --no-cache-dir > /cre/requirements.txt.orig
+    uv pip freeze --no-cache-dir > /cre/requirements.txt.orig
 
 RUN mkdir -p /cre && touch /cre/versions.txt && \ 
    echo "$(date +'%F %R') \t creML \t $TENSORFLOW_VERSION" >> /cre/versions.txt && \ 
-#   echo "$(date +'%F %R') \t  $(pip3 list | grep 'tensorflow ')" >> /cre/versions.txt && \
-   echo "$(date +'%F %R') \t  keras \t $(python3 -c 'import keras; print(keras.__version__)')" 2>nul >> /cre/versions.txt && \ 
-   echo "$(date +'%F %R') \t  tensorflow \t $(python3 -c 'import tensorflow; print(tensorflow.__version__)')" 2>nul >> /cre/versions.txt && \
+#   echo "$(date +'%F %R') \t  $(uv pip list | grep 'tensorflow ')" >> /cre/versions.txt && \
+   echo "$(date +'%F %R') \t  keras \t $(uv run python -c 'import keras; print(keras.__version__)')" 2>nul >> /cre/versions.txt && \ 
+   echo "$(date +'%F %R') \t  tensorflow \t $(uv run python -c 'import tensorflow; print(tensorflow.__version__)')" 2>nul >> /cre/versions.txt && \
    echo "$(date +'%F %R') \t  nvcc \t $(nvcc  --version | grep release)" >> /cre/versions.txt && \ 
-   echo "$(date +'%F %R') \t  $(pip3 list | grep 'ollama ')" >> /cre/versions.txt
+   echo "$(date +'%F %R') \t  $(uv pip list | grep 'ollama ')" >> /cre/versions.txt
 
 
 COPY cre /cre
