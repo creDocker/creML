@@ -1,4 +1,4 @@
-creBuild 	 2026.04
+creBuild 	 2026.05
  creUbuntu 	 24.04.4 LTS
   UbuntuName 	 noble
   OpenSSL 3.0.13 30 Jan 2024 (Library: OpenSSL 3.0.13 30 Jan 2024)
@@ -21,4 +21,4 @@ creBuild 	 2026.04
   keras 	 3.8.0
   tensorflow 	 2.16.2
   nvcc 	 Cuda compilation tools, release 12.0, V12.0.140
-  ollama                    0.6.1
+  ollama                    0.6.2
