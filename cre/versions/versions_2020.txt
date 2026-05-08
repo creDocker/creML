@@ -1,4 +1,4 @@
-creBuild 	 2026.04
+creBuild 	 2026.05
  creUbuntu 	 20.04.6 LTS
   UbuntuName 	 focal
   OpenSSL 1.1.1f  31 Mar 2020
@@ -10,8 +10,8 @@ creBuild 	 2026.04
  crePython 	 2020.0
    scipy 	 1.10.1
    statsmodels 	 0.14.1
-   geopandas 	 0.6.0
-   fiona 	 1.10.1
+   geopandas 	 0.13.2
+   fiona 	 1.9.6
    beautifulsoup4 	 
    openCV 	 4.13.0
  creML 	 2.11.0
